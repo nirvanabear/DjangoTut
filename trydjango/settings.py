@@ -26,7 +26,7 @@ SECRET_KEY = '%b@q=v@knszgl5fod&o#3!bq$79)i@+mlxq7=*x&%9y)z=az-0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['e15f510cb7ac44b091737e02693658ea.vfs.cloud9.us-east-2.amazonaws.com', '127.0.0.1']
+ALLOWED_HOSTS = ['e15f510cb7ac44b091737e02693658ea.vfs.cloud9.us-east-2.amazonaws.com', '127.0.0.1', '3.143.234.81']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'trydjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hey Look, a title tag!</title>
+    </head>
+    <body>
+        <!-- <h1>This is a navbar</h1> -->
+        {% include "navbar.html" %}
+        
+        {% block content %}
+        replace me
+        {% endblock %}
+
+        {% block other_content %}
+        replace me
+        {% endblock %}
+    </body>
+</html>
